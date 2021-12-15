@@ -1,0 +1,21 @@
+{
+  "name": "bayc-graph-service",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.studio.thegraph.com/deploy/ bayc-graph-service",
+    "create-local": "graph create --node http://localhost:8020/ bayc-graph-service",
+    "remove-local": "graph remove --node http://localhost:8020/ bayc-graph-service",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 bayc-graph-service"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-ts": "0.22.1",
+    "axios": "^0.21.1",
+    "fs": "^0.0.1-security",
+    "ipfs-http-client": "^52.0.2",
+    "js-base64": "^3.6.1"
+  },
+  "devDependencies": {
+    "@graphprotocol/graph-cli": "^0.22.2"
+  }
+}
